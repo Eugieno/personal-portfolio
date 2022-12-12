@@ -49,7 +49,7 @@ nav ul {
     width: 90%;
     margin:0 auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #F8F9FA;
+    background-color: #EBEBEB;
     color: black;
 }
 
@@ -74,17 +74,8 @@ nav ul {
     display:flex;
 }
 
-#portfolio-grid {
-    display: grid;
-    grid-template-rows: 75% 25%;
-    grid-template-columns: 75% 25%;
-    grid-template-areas: 
-    "accessibility landing-page"
-    "zen-garden dummy-1";
 
-    width: 80%;
-}
-
+/* Assigning name to each grid item */
 #accessibility {
     grid-area: accessibility;
     
@@ -111,5 +102,43 @@ nav ul {
 
 #dummy-3 {
     grid-area: dummy-3;
+    
+}
+
+/* Creating grid/grid areas */
+#folio-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "accessibility accessibility landing-page ."
+    "accessibility accessibility zen-garden ."
+    "dummy-1 . . ."
+    ". . . .";
+
+    width: 90%;
+    height:90%;
+    margin:0 auto;
+    gap: 5px;
+    
+}
+
+.portfolio-grid-item h3 {
+    position: absolute;
+}
+
+.portfolio-grid-item {
+    padding: 10px;
+    border:solid white;
+}
+
+main h2 {
+    font-size: 36px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+main {
+    margin-top: 20px;
     
 }
