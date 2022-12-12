@@ -1,0 +1,115 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+.primary-header {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    display:flex;
+    list-style-type:none;
+}
+
+.social-link {
+    display: flex;
+    list-style-type: none;
+    margin:0px; 
+    }
+
+.social-link-item a {
+    padding: 20px;    
+    color: white;
+}
+
+.main-nav-link a {
+    color: white;
+    padding:10px;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;;
+}
+
+.secondary-header {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/programmer-screen-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.about-me{
+    height:400px;
+    width: 90%;
+    margin:0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #F8F9FA;
+    color: black;
+}
+
+#about-photo img{
+    margin:10px;
+    height:80%;
+    border-radius: 50%;
+}
+
+#about-text {
+    margin: 10px;
+
+}
+
+.about-me h2 {
+    font-size: 36px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.about-photo-text-container {
+    display:flex;
+}
+
+#portfolio-grid {
+    display: grid;
+    grid-template-rows: 75% 25%;
+    grid-template-columns: 75% 25%;
+    grid-template-areas: 
+    "accessibility landing-page"
+    "zen-garden dummy-1";
+
+    width: 80%;
+}
+
+#accessibility {
+    grid-area: accessibility;
+    
+}
+
+#landing-page {
+    grid-area:landing-page;
+
+    }
+
+#zen-garden {
+    grid-area:zen-garden ;
+
+}
+#dummy-1 {
+    grid-area: dummy-1;
+    
+}
+
+#dummy-2 {
+    grid-area: dummy-2;
+    
+}
+
+#dummy-3 {
+    grid-area: dummy-3;
+    
+}
