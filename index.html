@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- header -->
-    <header class="primary-header">
+    <header id="home" class="primary-header">
         <ul class="social-link">
             <li class="social-link-item">
                 <a href="#"  class="fa fa-facebook"></a>
@@ -38,16 +38,16 @@
         <nav>
             <ul>
                 <li class="main-nav-link">
-                    <a href="#">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li class="main-nav-link">
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li class="main-nav-link">
-                    <a href="#">Portfolio</a>
+                    <a href="#portfolio">Portfolio</a>
                 </li>
                 <li class="main-nav-link">
-                    <a href="#">Contact</a>
+                    <a href="#contact-me">Contact</a>
                 </li>
                 <li class="main-nav-link">
                     <a href="#">Blog</a>
@@ -58,7 +58,7 @@
     <!-- header image -->
     <header class="secondary-header"></header>
     <!-- About me section -->
-    <section class="about-me">
+    <section id="about" class="about-me">
         <h2>About me</h2>
         <section class="about-photo-text-container">
             <section id="about-photo">
@@ -74,8 +74,8 @@
             </section>
         </section>
     </section>
-    <!-- Portfolio -->
-    <main>
+    <!-- Portfolio section -->
+    <main id="portfolio">
         <h2>Portfolios</h2>
         <!-- porfolio grids -->
         <section id="folio-wrapper">
@@ -96,11 +96,104 @@
                 <h3>Dummy 1</h3>
                 <div><a href="#"><img src="./asset/images/worsite.jpg" alt=""></a></div>
             </div>
+            <div id="dummy-2" class="portfolio-grid-item">
+                <h3>Dummy 2</h3>
+                <div><a href="#"><img src="./asset/images/dummy-2.jpg" alt=""></a></div>
+            </div>
+            <div id="dummy-3" class="portfolio-grid-item">
+                <h3>Dummy 3</h3>
+                <div><a href="#"><img src="./asset/images/dummy-3.jpg" alt=""></a></div>
+            </div>
+            <div id="dummy-4" class="portfolio-grid-item">
+                <h3>Dummy 4</h3>
+                <div><a href="#"><img src="./asset/images/dummy-4.jpg" alt=""></a></div>
+            </div>
+            <div id="dummy-5" class="portfolio-grid-item">
+                <h3>Dummy 5</h3>
+                <div><a href="#"><img src="./asset/images/dummy-5.jpg" alt=""></a></div>
+            </div>
+            <div id="dummy-6" class="portfolio-grid-item">
+                <h3>Dummy 6</h3>
+                <div><a href="#"><img src="./asset/images/dummy-6.jpg" alt=""></a></div>
+            </div>
+            <div id="dummy-7" class="portfolio-grid-item">
+                <h3>Dummy 7</h3>
+                <div><a href="#"><img src="./asset/images/dummy-7.jpg" alt=""></a></div>
+            </div>
+            <div id="dummy-8" class="portfolio-grid-item">
+                <h3>Dummy 8</h3>
+                <div><a href="#"><img src="./asset/images/dummy-8.jpg" alt=""></a></div>
+            </div>
+            <div id="dummy-9" class="portfolio-grid-item">
+                <h3>Dummy 9</h3>
+                <div><a href="#"><img src="./asset/images/programmer-keyboard.jpg" alt=""></a></div>
+            </div>
+            <div id="dummy-10" class="portfolio-grid-item">
+                <h3>Dummy 10</h3>
+                <div><a href="#"><img src="./asset/images/Analytics.jpg" alt=""></a></div>
+            </div>
+
+
         </section>
     </main>
-    <!-- Contact me -->
-    <section class="contact-me">
+    <!-- Contact me section-->
+    <footer id="contact-me">
+        <h2>Contact</h2>
+        <section id="contact-flex-container">
+            <section id="my-contact-info-and-link">
+                <h4>These are my primary contact</h4>
+                <p class="contact-info">Email: <strong>eugeneakinson@gmail.com</strong></p>
+                <p class="contact-info">Phone: <strong>+44 000 000 100</strong></p>
+                <h4>Social media</h4>
+                <ul class="social-link">
+                    <li class="social-link-item">
+                        <a href="#"  class="fa fa-facebook"></a>
+                    </li>
+                    <li class="social-link-item">
+                        <a href="#" class="fa fa-twitter"></a>
+                    </li>
+                    <li class="social-link-item">
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </li>
+                    <li class="social-link-item">
+                        <a href="#" class="fa fa-youtube"></a>
+                    </li>
+                   
+                </ul>
+            </section>
+            <section id ="contact-form">
+                <div class="col-lg-7">
+                    <div class="form-box">
+                        <h4>What would you like to talk about</h4>
+                        <p>We'd Love to Hear From you !</p>
+                        <hr>
+                        <table class="table table-light table-borderless">
+                            <tbody><tr>
+                                <td><input type="text" class="form-control" placeholder="Name...">
+                                </td>
 
-    </section>
+                                <td><input type="text" class="form-control" placeholder="Email address">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2"><textarea class="form-control" placeholder="You Message"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button type="submit">
+                                        SUBMIT NOW
+                                    </button>
+
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+    </footer>
 </body>
 </html>

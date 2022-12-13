@@ -3,9 +3,6 @@ body {
     color: white;
 }
 
-
-
-
 .primary-header {
     display: flex;
     justify-content: space-around;
@@ -44,6 +41,7 @@ nav ul {
     background-position: center;
 }
 
+/* About me section */
 .about-me{
     height:400px;
     width: 90%;
@@ -61,6 +59,7 @@ nav ul {
 
 #about-text {
     margin: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
@@ -68,13 +67,14 @@ nav ul {
     font-size: 36px;
     margin-bottom: 5px;
     text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .about-photo-text-container {
     display:flex;
 }
 
-
+/* Portfolio section */
 /* Assigning name to each grid item */
 #accessibility {
     grid-area: accessibility;
@@ -105,16 +105,48 @@ nav ul {
     
 }
 
-/* Creating grid/grid areas */
+#dummy-4 {
+    grid-area: dummy-4;
+    
+}
+#dummy-5 {
+    grid-area: dummy-5;
+    
+}
+#dummy-6 {
+    grid-area: dummy-6;
+    
+}
+#dummy-7 {
+    grid-area: dummy-7;
+    
+}
+
+#dummy-8 {
+    grid-area: dummy-8;
+    
+}
+
+#dummy-9 {
+    grid-area: dummy-9;
+    
+}
+
+#dummy-10 {
+    grid-area: dummy-10;
+    
+}
+
+
 #folio-wrapper {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "accessibility accessibility landing-page ."
-    "accessibility accessibility zen-garden ."
-    "dummy-1 . . ."
-    ". . . .";
+    "accessibility accessibility landing-page dummy-1"
+    "accessibility accessibility zen-garden dummy-2"
+    "dummy-3 dummy-4 dummy-5 dummy-6"
+    "dummy-7 dummy-8 dummy-9 dummy-10 ";
 
     width: 90%;
     height:90%;
@@ -136,9 +168,32 @@ main h2 {
     font-size: 36px;
     margin-bottom: 5px;
     text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 main {
     margin-top: 20px;
     
+}
+footer {
+    background-color: #EBEBEB;
+    color: black;
+    padding:10px 0;
+}
+
+#contact-flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer h2 {
+    font-size: 36px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-info {
+    font-size: 20px;
+    text-align: left;
 }
