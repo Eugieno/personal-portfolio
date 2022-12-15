@@ -43,7 +43,7 @@ nav ul {
 
 /* About me section */
 .about-me{
-    height:400px;
+    height:380px;
     width: 90%;
     margin:0 auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -52,13 +52,14 @@ nav ul {
 }
 
 #about-photo img{
-    margin:10px;
-    height:80%;
+    height:50%;
     border-radius: 50%;
+    margin-left: 60px;
+    margin-right: 0;
 }
 
 #about-text {
-    margin: 10px;
+    padding: 10px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
@@ -68,11 +69,32 @@ nav ul {
     margin-bottom: 5px;
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 10px;
+}
+#em-intro {
+    font-size:x-large
+
 }
 
+
 .about-photo-text-container {
-    display:flex;
+    display:grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "about-photo about-text"; 
+   
 }
+
+#about-photo {
+    grid-area: about-photo;
+}
+
+#about-text {
+    grid-area: about-text;
+}
+
+
 
 /* Portfolio section */
 /* Assigning name to each grid item */
@@ -156,7 +178,9 @@ nav ul {
 }
 
 .portfolio-grid-item h3 {
-    position: absolute;
+    position: relative;
+    bottom:4px;
+    
 }
 
 .portfolio-grid-item {
@@ -200,10 +224,12 @@ footer h2 {
 
 body footer #contact-flex-container ul li a {
     color:black;
+    justify-content: flex-start;
 }
 
 /* Media queries */
 @media only screen and (max-width:600px) {
+    /* Headers */
     #social-link {
         display:none;
     }
@@ -222,21 +248,40 @@ body footer #contact-flex-container ul li a {
     .secondary-header{
         height: 200px;
     }
-
+/* About me section */
     #about {
         height:auto
     }
 
     .about-photo-text-container {
-        flex-direction: column;
+        display: block;
+
     }
 
     #about-photo img{
         margin:auto;
-        height:fit-content;
+        height:80%;
         width: 80%;
         border: radius 50%;
     }
     
+/* Portfolio section */
+.portfolio-grid-item h3 {
+    font-size: small;
+}
+
+
+/* Footer section */
+#contact-flex-container{
+    flex-direction: column-reverse;
+}
+
+#my-contact-info-and-link {
+    margin-left:10px; 
+}
+
+#contact-form {
+    margin-left:10px;
+}
 
 }
