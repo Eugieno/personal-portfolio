@@ -27,4 +27,4 @@ The following image shows the apparance of each section of the webpage after imp
 
 The full porfolio page can be found here: [Final porfolio page](./asset/images/final-portfolio-page.png)
 
-Here is a link to the live wbsite: [Live website]()
+Here is a link to the live wbsite: [Live website](https://eugieno.github.io/personal-portfolio/)
