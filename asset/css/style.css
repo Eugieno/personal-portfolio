@@ -197,3 +197,46 @@ footer h2 {
     font-size: 20px;
     text-align: left;
 }
+
+body footer #contact-flex-container ul li a {
+    color:black;
+}
+
+/* Media queries */
+@media only screen and (max-width:600px) {
+    #social-link {
+        display:none;
+    }
+
+    #my-name {
+        justify-content: flex-start;
+        font-size: medium;
+        padding: 20px;
+    }
+
+    nav {
+        position: relative;
+        right:40px;
+    }
+
+    .secondary-header{
+        height: 200px;
+    }
+
+    #about {
+        height:auto
+    }
+
+    .about-photo-text-container {
+        flex-direction: column;
+    }
+
+    #about-photo img{
+        margin:auto;
+        height:fit-content;
+        width: 80%;
+        border: radius 50%;
+    }
+    
+
+}
